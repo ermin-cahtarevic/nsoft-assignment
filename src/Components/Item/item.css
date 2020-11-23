@@ -84,13 +84,3 @@
 .item-right {
   padding-right: 35px;
 }
-
-.item-right span {
-  padding: 5px;
-  background-color: hsl(180, 31%, 95%);
-  color: hsl(180, 29%, 50%);
-  font-size: 15px;
-  font-weight: 700;
-  border-radius: 4px;
-  margin: 7px;
-}

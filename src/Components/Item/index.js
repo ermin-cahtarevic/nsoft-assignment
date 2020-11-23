@@ -1,4 +1,5 @@
 import React from 'react';
+import Tag from '../Tag';
 
 import './item.css';
 
@@ -25,16 +26,16 @@ const Item = ({ job }) => {
         </div>
       </div>
       <div className="item-right">
-        <span>{job.role}</span>
-        <span>{job.level}</span>
+        <Tag value={job.role} />
+        <Tag value={job.level} />
         {
           job.languages.map(language => (
-            <span key={language}>{language}</span>
+            <Tag key={language} value={language} />
           ))
         }
         {
           job.tools.map(tool => (
-            <span key={tool}>{tool}</span>
+            <Tag key={tool} value={tool} />
           ))
         }
       </div>
