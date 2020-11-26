@@ -7,16 +7,29 @@ import './list.css';
 
 const List = () => {
   const [jobList, setJobList] = useState([]);
+  const [filters, setFilters] = useState([]);
 
   useEffect(() => {
     axios.get(
       './data.json'
     ).then(res => {
-      setTimeout(() => {
-        setJobList(res.data);
-      }, 800);
+      setJobList(res.data);
     })
   }, []);
+
+  const addFilter = value => {
+    const temp = filters;
+    temp.push(value);
+
+    setFilters([...temp]);
+  }
+
+  const filtered = filters.length < 1 ? jobList : (
+    jobList.filter(job => {
+      const tags = [job.role, job.level, ...job.languages, ...job.tools];
+      return filters.every(filter => tags.includes(filter));
+    })
+  );
 
   if (jobList.length < 1) {
     return (
@@ -32,8 +45,8 @@ const List = () => {
   return (
     <div className="list">
       {
-        jobList.map(job => (
-          <Item job={job} key={job.id} />
+        filtered.map(job => (
+          <Item job={job} key={job.id} addFilter={addFilter} />
         ))
       }
     </div>

@@ -3,7 +3,7 @@ import Tag from '../Tag';
 
 import './item.css';
 
-const Item = ({ job }) => {
+const Item = ({ job, addFilter }) => {
   return (
     <div className="item">
       <div className={job.featured ? 'featured-line featured' : 'featured-line'} />
@@ -27,16 +27,16 @@ const Item = ({ job }) => {
           </div>
         </div>
         <div className="item-right">
-          <Tag value={job.role} />
-          <Tag value={job.level} />
+          <Tag value={job.role} addFilter={addFilter} />
+          <Tag value={job.level} addFilter={addFilter} />
           {
             job.languages.map(language => (
-              <Tag key={language} value={language} />
+              <Tag key={language} value={language} addFilter={addFilter} />
             ))
           }
           {
             job.tools.map(tool => (
-              <Tag key={tool} value={tool} />
+              <Tag key={tool} value={tool} addFilter={addFilter} />
             ))
           }
         </div>
