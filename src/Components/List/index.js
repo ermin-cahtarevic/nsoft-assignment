@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Loader from 'react-loader-spinner';
 import Item from '../Item';
+import FilterBar from '../FilterBar';
 
 import './list.css';
 
@@ -44,6 +45,7 @@ const List = () => {
 
   return (
     <div className="list">
+      { filters.length > 0 && <FilterBar filters={filters} /> }
       {
         filtered.map(job => (
           <Item job={job} key={job.id} addFilter={addFilter} />
