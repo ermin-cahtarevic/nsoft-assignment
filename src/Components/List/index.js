@@ -19,11 +19,21 @@ const List = () => {
   }, []);
 
   const addFilter = value => {
+    if (filters.includes(value)) return;
+
     const temp = filters;
     temp.push(value);
 
     setFilters([...temp]);
   }
+
+  const removeFilter = value => {
+    const temp = filters;
+    temp.splice(temp.findIndex(filter => filter === value), 1)
+    setFilters([...temp])
+  }
+
+  const clearFilters = () => setFilters([]);
 
   const filtered = filters.length < 1 ? jobList : (
     jobList.filter(job => {
@@ -45,7 +55,7 @@ const List = () => {
 
   return (
     <div className="list">
-      { filters.length > 0 && <FilterBar filters={filters} /> }
+      { filters.length > 0 && <FilterBar filters={filters} removeFilter={removeFilter} clearFilters={clearFilters} /> }
       {
         filtered.map(job => (
           <Item job={job} key={job.id} addFilter={addFilter} />
