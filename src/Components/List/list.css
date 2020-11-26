@@ -8,6 +8,14 @@
   margin: 0 auto;
 }
 
+.loader-wrap {
+  width: 100%;
+  height: calc(100vh - 160px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media only screen and (max-width: 1000px) {
   .list {
     padding-bottom: 0;
