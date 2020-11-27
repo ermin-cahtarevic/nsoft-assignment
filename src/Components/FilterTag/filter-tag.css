@@ -1,0 +1,38 @@
+.filter-tag {
+  background-color: hsl(180, 52%, 96%);
+  margin: 0 10px;
+  border-radius: 6px;
+  display: flex;
+}
+
+.filter-tag span {
+  color: hsl(180, 29%, 50%);
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+
+.filter-tag button {
+  background-color: hsl(180, 29%, 50%);
+  border: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 0 6px 6px 0;
+}
+
+.filter-tag button:hover {
+  cursor: pointer;
+  background-color: hsl(180, 14%, 20%);
+}
+
+.filter-tag button:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .filter-tag {
+    margin: 10px 10px 10px 0;
+  }
+}

@@ -1,9 +1,13 @@
+import Header from './Components/Header';
+import List from './Components/List';
+
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      React app
+      <Header />
+      <List />
     </div>
   );
 }

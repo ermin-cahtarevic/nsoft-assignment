@@ -1,0 +1,10 @@
+.header {
+  width: 100%;
+  background-color: hsl(180, 29%, 50%);
+}
+
+.header img {
+  display: block;
+  width: 100%;
+  max-height: 160px;
+}
