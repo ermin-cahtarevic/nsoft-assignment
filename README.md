@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+### Job Listings
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Simple React app for job listings
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+* [Setup](#setup)
+* [Author](#author)
+* [Show your Support](#show-your-support)
+* [Acknowledgements](#acknowledgements)
 
-### `yarn start`
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h3 align="center">Desktop</h3>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<p align="center">
+  <img src="./public/job-listings-desktop.png">
+</p>
 
-### `yarn test`
+<h3 align="center">Filtered Jobs - Desktop</h3>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+  <img src="./public/job-listings-filtered-desktop.png">
+</p>
 
-### `yarn build`
+<h3 align="center">Mobile</h3>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center">
+  <img src="./public/job-listings-mobile.png">
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h3 align="center">Filtered Jobs - Mobile</h3>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="center">
+  <img src="./public/job-listings-filtered-mobile.png">
+</p>
 
-### `yarn eject`
+Simple React app for job listings.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Job data is fetched from the [data.json](public/data.json) file.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Users can browse through the job listings and filter the jobs by clicking on the 'tags'.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Live version of the project: [Live version](https://joblistings.netlify.app/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Project Link: [nsoft-assignment](https://github.com/ermin-cahtarevic/nsoft-assignment)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Built With
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+*   React
+*   CSS
+*   npm
+*   ES6
 
-### Code Splitting
+## Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+git clone git@github.com:ermin-cahtarevic/nsoft-assignment.git
+```
+### Install dependencies
 
-### Analyzing the Bundle Size
+```
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Start Development Server
 
-### Making a Progressive Web App
+```
+npm start
+```
+### Visit this link in your browser
+```
+http://localhost:3000/
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- CONTACT -->
+## Author
 
-### Advanced Configuration
+- Github: [@ermin-cahtarevic](https://github.com/ermin-cahtarevic)
+- Twitter: [@ErminCahtarevic](https://twitter.com/ErminCahtarevic)
+- Linkedin: [Ermin Cahtarevic](https://www.linkedin.com/in/ermincahtarevic/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- ABOUT THE PROJECT-->
+## Show your support
 
-### Deployment
+Give a star if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* [NSoft](https://www.nsoft.com/)
