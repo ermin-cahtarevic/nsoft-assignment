@@ -30,3 +30,9 @@
 .filter-tag button:focus {
   outline: none;
 }
+
+@media only screen and (max-width: 1000px) {
+  .filter-tag {
+    margin: 10px 10px 10px 0;
+  }
+}
